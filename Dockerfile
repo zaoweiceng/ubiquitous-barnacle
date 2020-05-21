@@ -6,5 +6,6 @@ ENV TEST /usr/src/test
 ADD . TEST
 WORKDIR TEST
 RUN gcc helloworld.c
-ENTRYPOINT "helloworld.out"
+RUN ls -al
+ENTRYPOINT "./a.out"
 
