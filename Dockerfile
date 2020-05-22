@@ -7,5 +7,6 @@ ADD . TEST
 WORKDIR TEST
 RUN gcc helloworld.c
 RUN ls -al
+RUN dir
 ENTRYPOINT "./a.out"
 
